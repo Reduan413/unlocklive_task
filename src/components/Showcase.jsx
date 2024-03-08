@@ -68,9 +68,8 @@ const Showcase = () => {
           Our Chefs New Creations
         </h1>
         <p className="pt-3  font-normal text-sm lg:text-base text-primaryColor font-ValueSansPro">
-          Behold the extraordinary creations born from the synergy of our users'
-          ingenuity and the transformative power of AI, a testament to boundless
-          innovation.
+          {`Behold the extraordinary creations born from the synergy of our users&apos ingenuity and the transformative power of AI, a testament to boundless
+          innovation.`}
         </p>
       </div>
 

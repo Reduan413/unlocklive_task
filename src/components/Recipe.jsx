@@ -42,9 +42,9 @@ const Recipe = () => {
             eu sit ornare imperdiet viverra sit vel.
           </p>
           <p className="pt-3  font-normal text-base text-primaryColor font-ValueSansPro">
-            There are many variations of passages of Lorem Ipsum form any
-            injected humour, or randomised words which don &apos t look slightly
-            believable.
+            {`There are many variations of passages of Lorem Ipsum form any
+            injected humour, or randomised words which don&apost look slightly
+            believable.`}
           </p>
         </div>
         <div className="lg:absolute w-full lg:w-[60%] h-[400px] lg:h-[100%] top-0 right-0  flex py-12 lg:py-24 recipe-galley">

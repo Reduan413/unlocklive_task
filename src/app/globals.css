@@ -1,11 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@layer components {
+}
+@font-face {
+  font-family: "Abril-Display";
+  src: url("../../public/Fonts/Abril/Abril_Display_Regular.otf");
+}
+@font-face {
+  font-family: "Value-Sans-Pro";
+  src: url("../../public/Fonts/Value Sans Pro/ValueSansPro-Regular.ttf");
+}
+@font-face {
+  font-family: "Bakilda-Histori";
+  src: url("../../public/Fonts/Bakilda/bakilda-histori.ttf");
+}
+@font-face {
+  font-family: "Lemon-font";
+  src: url("../../public/Fonts/Lemon/Lemon-Regular.ttf");
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --main-containerPadding: 2.4rem;
+  --main-containerWidth: 142rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,16 +37,60 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #fff rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+.recipe-galley .swiper-slide {
+  width: 360px !important;
+}
+.main-container {
+  width: 100%;
+}
+
+.main-container {
+  padding-left: var(--main-containerPadding);
+  padding-right: var(--main-containerPadding);
+  margin: 0 auto;
+}
+.main-container {
+  max-width: calc(
+    var(--main-containerWidth) + (var(--main-containerPadding) * 2)
+  );
+}
+.showcase-btn {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.hero .swiper .swiper-pagination {
+  width: 50%;
+  bottom: 110px;
+  left: 50px;
+  text-align: start;
+}
+.hero .swiper .swiper-pagination-bullet-active {
+  background-color: #86371c;
+}
+/* .dropdown:hover .dropdown-menu{
+  display: block;
+}
+.dropdown-menu:hover{
+  display: block;
+  background-color: rgb(149, 190, 36);
+} */
+
+@media only screen and (max-width: 767px) {
+  .hero .swiper .swiper-pagination {
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+  }
+  .recipe-galley .swiper-slide {
+    width: 100% !important;
   }
 }

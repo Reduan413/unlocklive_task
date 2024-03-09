@@ -6,7 +6,7 @@ import { AiOutlineClose, AiOutlineMenuUnfold } from "react-icons/ai";
 import { FaRegHeart, FaUserCircle } from "react-icons/fa";
 import { IoSearchOutline } from "react-icons/io5";
 import { PiShoppingCartLight } from "react-icons/pi";
-import LogoImg from "../assets/image/logo.svg";
+import LogoImg from "../assets/image/logo.png";
 // import Button from "./Button";
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
